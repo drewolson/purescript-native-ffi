@@ -1,0 +1,18 @@
+{
+  "languageserver": {
+    "purescript": {
+      "command": "purescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["purescript"],
+      "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"],
+      "settings": {
+        "purescript": {
+          "addSpagoSources": true,
+          "addNpmPath": true,
+          "buildCommand": "spago build --purs-args --json-errors",
+          "codegenTargets": ["corefn"]
+        }
+      }
+    }
+  }
+}
